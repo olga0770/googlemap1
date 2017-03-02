@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link href="map.css" type="text/css" rel="stylesheet">
+    <title>Simple markers</title>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 70%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+<body>
+      <h1>KEA</h1>
+
+     <div id="map"></div>
+
+
+
+    <script>
+        function initMap() {
+        var myLatLng1 = {lat: 55.706387, lng: 12.539127};
+        var myLatLng2 = {lat: 55.702824, lng: 12.538005};
+        var myLatLng3 = {lat: 55.706275, lng: 12.541474};
+        var myLatLng4 = {lat: 55.704338, lng: 12.537269};
+        var myLatLng5 = {lat: 55.700847, lng: 12.537806};
+
+        var map = new google.maps.Map(document.querySelector('#map'), {
+          zoom: 15,
+          center: myLatLng1
+        });
+
+        var marker1 = new google.maps.Marker({
+        draggable: true,
+        animation: google.maps.Animation.DROP,
+        position: myLatLng1,
+        map: map,
+        title: 'Kea, Lygten 16, 2400 København NV'
+        });
+
+        var marker2 = new google.maps.Marker({
+          position: myLatLng2,
+          map: map,
+          title: 'Nørrebro Bycenter, Lygten 2L, 2400 København NV'
+        });
+
+        var marker3 = new google.maps.Marker({
+          position: myLatLng3,
+          map: map,
+          title: 'Bispebjerg St, 2400 København NV'
+        });
+
+
+         var marker4 = new google.maps.Marker({
+          position: myLatLng4,
+          map: map,
+          title: 'Fitness World Lygten, Rentemestervej 2, 2400 København NV'
+        });
+
+        var marker5 = new google.maps.Marker({
+          position: myLatLng5,
+          map: map,
+          title: 'Nørrebro St, 2400 København NV'
+        });
+
+      }
+    </script>
+
+
+
+
+
+
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdPszTSTFV8CQiONPeQVs14jcONGFpMk4&callback=initMap">
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="js.js"></script>
+
+</body>
+</html>
+
+
