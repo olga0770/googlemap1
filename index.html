@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+<link rel="icon"
+      type="image/png"
+      href="picture/markerKEA.png">
+
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <title>Using closures in event listeners</title>
+    <link href="map.css" type="text/css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <title>KEA</title>
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 100%;
+        height: 70%;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -18,50 +29,219 @@
       }
     </style>
   </head>
-  <body>
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
-          center: {lat: -25.363882, lng: 131.044922 }
-        });
 
-          var myLatLng = {lat: -25.363882, lng: 131.044922};
+<body>
+      <h1>KEA</h1>
 
 
 
 
-        var secretMessages = ['This', 'is', 'the', 'secret', 'message'];
-
-        for (var i = 0; i < secretMessages.length; ++i) {
-          var marker = new google.maps.Marker({
-
-              position: myLatLng,
-            map: map
-          });
-          attachSecretMessage(marker, secretMessages[i]);
-        }
-      }
+<div class="row moreinfo">
 
 
+<template id="informationmarker">
+
+<div class="col-xs-8 col-xs-push-2 col-sm-6 col-sm-push-3 col-md-4 col-md-push-4 windowinfo">
+<img class="img-responsive data_billede" src="picture/kea-sted.jpg" alt="img">
+<h3 class="data_navn">DATA_NAVN</h3>
+<h4 class="data_adresse">ADRESSE</h4>
+<h6 class="data_beskrivelse">BESKRIVELSE</h6>
+
+</div>
+</template>
+</div>
 
 
 
-      // Attaches an info window to a marker with the provided message. When the
-      // marker is clicked, the info window will open with the secret message.
-      function attachSecretMessage(marker, secretMessage) {
+<div id="map"></div>
+
+
+
+
+
+
+
+
+
+<script>
+        function initMap() {
+        var myLatLng1 = {lat: 55.706387, lng: 12.539127};
+        var myLatLng2 = {lat: 55.702824, lng: 12.538005};
+        var myLatLng3 = {lat: 55.706275, lng: 12.541474};
+        var myLatLng4 = {lat: 55.704338, lng: 12.537269};
+        var myLatLng5 = {lat: 55.700847, lng: 12.537806};
+
+var map = new google.maps.Map(document.querySelector('#map'), {
+zoom: 15,
+center: myLatLng1
+});
+
+map.data.loadGeoJson(
+'https://storage.googleapis.com/mapsdevsite/json/google.json');
+
+    var marker1 = new google.maps.Marker({
+    draggable: true,
+    animation: google.maps.Animation.DROP,
+    position: myLatLng1,
+    icon: 'picture/markerKEA.png',
+    map: map,
+    title: 'Kea, Lygten 16, 2400 København NV / 55.706387, 12.539127'
+    });
+
+    var marker2 = new google.maps.Marker({
+    position: myLatLng2,
+    map: map,
+    title: 'Nørrebro Bycenter, Lygten 2L, 2400 København NV'
+    });
+
+    var marker3 = new google.maps.Marker({
+    position: myLatLng3,
+    map: map,
+    title: 'Bispebjerg St, 2400 København NV'
+    });
+
+    var marker4 = new google.maps.Marker({
+    position: myLatLng4,
+    map: map,
+    title: 'Fitness World Lygten, Rentemestervej 2, 2400 København NV'
+    });
+
+    var marker5 = new google.maps.Marker({
+    position: myLatLng5,
+    map: map,
+    title: 'Nørrebro St, 2400 København NV'
+    });
+
+
+
+
+
+
+
+
+
+    map.addListener('center_changed', function() {
+    window.setTimeout(function() {
+    map.panTo(marker1.getPosition());
+    }, 3000);
+    });
+
+    marker1.addListener('click', function() {
+    map.setZoom(20);
+    map.setCenter(marker1.getPosition());
+    });
+
+
+
+
+
+    var secretMessages = ['Her kan du shoppe'];
+
+    for (var i = 0; i < secretMessages.length; ++i) {
+    var marker2 = new google.maps.Marker({
+
+    position: myLatLng2,
+    map: map,
+    title: 'Nørrebro Bycenter, Lygten 2L, 2400 København NV'
+    });
+    attachSecretMessage(marker2, secretMessages[i]);
+    }
+
+
+
+// Attaches an info window to a marker with the provided message.
+// When the marker is clicked, the info window will open
+// with the secret message.
+
+    function attachSecretMessage(marker, secretMessage) {
+    var infowindow = new google.maps.InfoWindow({
+    content: secretMessage
+    });
+
+    marker2.addListener('click', function() {
+    infowindow.open(marker2.get('map'), marker2);
+    });
+    }
+
+
+
+
+
+
+
+
+
+
+    var contentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Fitness World Lygten</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Fitness World Lygten</b>, also referred to as <b>Fitness World Lygten</b>, is a large ' +
+            'sandstone rock formation in the southern part of the '+
+            'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+            'south west of the nearest large town, Alice Springs; 450&#160;km '+
+            '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+            'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+            'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+            'Aboriginal people of the area. It has many springs, waterholes, '+
+            'rock caves and ancient paintings. Uluru is listed as a World '+
+            'Heritage Site.</p>'+
+            '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+            'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+            '(last visited June 22, 2009).</p>'+
+            '</div>'+
+            '</div>';
+
         var infowindow = new google.maps.InfoWindow({
-          content: secretMessage
+          content: contentString
         });
 
-        marker.addListener('click', function() {
-          infowindow.open(marker.get('map'), marker);
+        var marker4 = new google.maps.Marker({
+          position: myLatLng4,
+          map: map,
+          title: 'Fitness World Lygten, Rentemestervej 2, 2400 København NV'
         });
-      }
-    </script>
+        marker4.addListener('click', function() {
+          infowindow.open(map, marker4);
+        });
+
+
+
+
+
+
+
+
+}
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdPszTSTFV8CQiONPeQVs14jcONGFpMk4&callback=initMap">
     </script>
-  </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="js.js"></script>
+    <script src="json.json"></script>
+
+</body>
 </html>
+
+
