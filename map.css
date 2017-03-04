@@ -1,10 +1,22 @@
 @charset "utf-8";
 * {margin: 0px;padding: 0px;}
 
+#map {
+    height: 80%;
+      }
 
-img{
-width:100%;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+      }
+
+
+img {
+width: 50%;
 }
+
+
 
 #map{
     margin-top: 30px;
@@ -19,6 +31,7 @@ width:100%;
 
 
 
+/*
 .windowinfo{
     margin-top: 10px;
     margin-bottom: 20px;
@@ -27,6 +40,7 @@ width:100%;
     padding-bottom: 20px;
 
     }
+*/
 
 .data_icon {
 width: 25px;

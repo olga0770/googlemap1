@@ -12,6 +12,23 @@
 
 		"beskrivelse": "KEA - Københavns Erhvervsakademis formål er at udvikle og udbyde praksisrettede videregående uddannelser på erhvervsakademiniveau og professionsbachelorniveau. Det sker i nært samarbejde med erhvervsliv og uddannelsesinstitutioner i ind- og udland. KEA fungerer desuden som videnscenter for offentlige og private virksomheder."
 
+},
+
+
+
+{
+		"id": "12",
+        "billede": "kea",
+		"navn": "Fitness World Lygten",
+        "adresse": "Rentemestervej 2, 2400 København NV",
+
+        "position": {
+            "lat": 55.704338,
+            "lng": 12.537269
+        },
+
+		"beskrivelse": "KEA - Københavns Erhvervsakademis formål er at udvikle og udbyde praksisrettede videregående uddannelser på erhvervsakademiniveau og professionsbachelorniveau. Det sker i nært samarbejde med erhvervsliv og uddannelsesinstitutioner i ind- og udland. KEA fungerer desuden som videnscenter for offentlige og private virksomheder."
+
 }
 ]
 
