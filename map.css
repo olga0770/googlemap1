@@ -27,3 +27,10 @@ width:100%;
     padding-bottom: 20px;
 
     }
+
+.data_icon {
+width: 25px;
+background-image: url("picture/markerKEA.png");
+background-repeat: no-repeat center center;
+
+}
