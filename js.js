@@ -22,7 +22,10 @@ var overlay = new google.maps.GroundOverlay('picture/map-01.svg', imageBounds);
 overlay.setMap(map);
 
 $.getJSON("json.json", buildMap);
+
 }
+
+
 
 function buildMap(JSONdata) {
 //debugInfo("Loaded JSONdata");
@@ -63,4 +66,22 @@ infowindow.open(map, marker);
 
 });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

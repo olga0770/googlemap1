@@ -31,16 +31,15 @@ width: 50%;
 
 
 
-/*
-.windowinfo{
+.location{
     margin-top: 10px;
     margin-bottom: 20px;
     border-style: double;
     border-width: thick;
-    padding-bottom: 20px;
-
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
     }
-*/
 
 .data_icon {
 width: 25px;
