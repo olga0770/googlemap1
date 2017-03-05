@@ -38,6 +38,7 @@ function createMarker(sted) {
 var marker = new google.maps.Marker({
 position: sted.position,
 title: sted.navn,
+icon: sted.icon,
 map: map
 });
 

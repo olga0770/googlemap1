@@ -10,6 +10,8 @@
             "lng":12.539071
         },
 
+        "icon": "picture/iconKea-01.png",
+
 		"beskrivelse": "KEA - Københavns Erhvervsakademis formål er at udvikle og udbyde praksisrettede videregående uddannelser på erhvervsakademiniveau og professionsbachelorniveau. Det sker i nært samarbejde med erhvervsliv og uddannelsesinstitutioner i ind- og udland. KEA fungerer desuden som videnscenter for offentlige og private virksomheder."
 
 },
@@ -18,7 +20,7 @@
 
 {
 		"id": "12",
-        "billede": "kea",
+        "billede": "fitness",
 		"navn": "Fitness World Lygten",
         "adresse": "Rentemestervej 2, 2400 København NV",
 
@@ -27,9 +29,75 @@
             "lng": 12.537269
         },
 
-		"beskrivelse": "KEA - Københavns Erhvervsakademis formål er at udvikle og udbyde praksisrettede videregående uddannelser på erhvervsakademiniveau og professionsbachelorniveau. Det sker i nært samarbejde med erhvervsliv og uddannelsesinstitutioner i ind- og udland. KEA fungerer desuden som videnscenter for offentlige og private virksomheder."
+        "icon": "picture/iconFitness-01.png",
+
+		"beskrivelse": "Vores fitnesscenter på Lygten i København NV er et æstetisk flot center med åbne lokaler og gulv-til-loft vinduer, som giver et fantastisk lysindfald. Fitnesscentret er fordelt på 3 etager, hvor det første, du møder, er vores store reception med veluddannet personale. Hos os finder du alt, du skal bruge til din fitness, cardio og styrketræning. Vi har holdsal, så du også kan træne på hold og få motivation fra instruktøren og de andre deltagere på holdet. Kom forbi og tag en snak. Vi glæder os til at se dig!"
+
+},
+
+
+
+
+
+{
+		"id": "14",
+        "billede": "shopping",
+		"navn": "Nørrebro Bycenter København",
+        "adresse": "Lygten 2 B-M, DK-2400 København NV",
+
+        "position": {
+            "lat": 55.703790,
+            "lng": 12.538337
+        },
+
+        "icon": "picture/iconShopping-01.png",
+
+		"beskrivelse": "Nørrebro Bycenter er placeret på de tidligere sporarealer ved Lygten Station, der tilhørte den nedlagte Slangerupbane. Det består dels af en bastant blok i fire etager, dels et langstrakt anlæg i én eller to etager, arrangeret om en indendørs gade. Uden for overdækker store baldakiner fodgængerområderne. Butikscentret er opført i røde og gule mursten, beton og grå metalplader. Det indeholder en lang række specialbutikker, et byggevaremarked og en p-kælder."
+
+},
+
+
+
+
+{
+		"id": "16",
+        "billede": "bispebjerg",
+		"navn": "Bispebjerg Station",
+        "adresse": "Bispebjerg St, 2400 København NV",
+
+        "position": {
+            "lat": 55.706275,
+            "lng": 12.541474
+        },
+
+        "icon": "picture/iconTrain-01.png",
+
+		"beskrivelse": "Bispebjerg Station er en S-togs-station på Ringbanen nær Bispebjerg. Stationen er placeret med trappeopgang og elevator til Tagensvej mellem Lygten og Rovsingsgade. Der findes uoverdækkede cykelstativer ved Tagensvej. Perronen er uoverdækket, dog fungerer broen med Tagensvej som delvis perronoverdækning. Den sydøstlige side af Ringbanen mellem Mimersgade og Lersø Park Allé forbi stationen præges af tidligere aktiviteter i forbindelse med godstrafik. Sporene er endnu delvis bevarede. Banedanmark overvejer at ombygge området fra Tagensvej mod Ryparken Station til et serviceområde, hvor togsæt, der ikke er i drift kan parkeres. Et klargøringsanlæg indgår også i disse planer."
+
+},
+
+
+
+
+{
+		"id": "16",
+        "billede": "norrebro",
+		"navn": "Nørrebro Station",
+        "adresse": "Nørrebro St, 2400 København NV",
+
+        "position": {
+            "lat": 55.700847,
+            "lng": 12.537806
+        },
+
+        "icon": "picture/iconTrain-01.png",
+
+		"beskrivelse": "Nørrebro Station er en S-togsstation på Ydre Nørrebro på grænsen til Nordvestkvarteret. Nørrebro Station er en højbanestation der er placeret, hvor S-banen (Ringbanen) passerer Nørrebrogade. Stationen er blandt de travleste på Ringbanen. Stationen, der er karakteristisk ved sit store buede tag (perronhal), er fredet og blev ved en større restaurering ført tilbage til sit oprindelige grønne udseende. Nørrebro Station forventes efter Metroringens åbning at blive Danmarks tredjestørste station (målt på passagertal). Stationen vil da ud over S-tog og metro betjene linje 5C og tre andre buslinjer."
 
 }
+
+
+
 ]
 
 
